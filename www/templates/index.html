@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Famintos por Buck Burguer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/dfa758764d.js" crossorigin="anonymous"></script>
+
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div class="cabecalho_restaurante">
+        <div class="logos">
+            <img src="../images/instaLogo.png" style="width: 40px; height: 40px;">
+            <img src="../images/wppLogo.png" style="width: 34px; height: 34px;">
+        </div>
+        <img src="../images/logo2.png" class="imglogo">
+        <h5 style="margin-right: 5%;"> Horário de funcionamento <br> <b>19:00 às 23:00</b></h5>
+    </div>
+
+    <hr>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-autohide="true" data-bs-aimation="true" data-bs-delay="2000">
+            <div class="toast-body" style="background-color: rgba(158, 236, 139, 0.644);">
+                <b>Adicionado ao carrinho</b>
+            </div>
+        </div>
+    </div>
+
+    <section class="">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-lanche" src="../images/picanha.jpeg" />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Hamburguer de Picanha</h5>
+
+                                R$ 17,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Hamburguer de Picanha',
+                                                    preco: 17
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Promoção
+                        </div>
+
+                        <img class="card-img-top img-lanche" src="../images/costela.webp" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Hamburguer de Costela</h5>
+
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+
+                                <span class="text-muted text-decoration-line-through">R$29.00</span>
+                                R$18,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Hamburguer de Costela',
+                                                    preco: 18
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Promoção
+                        </div>
+
+                        <img class="card-img-top img-lanche" src="../images/combo.webp" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Combo</h5>
+
+                                <span class="text-muted text-decoration-line-through">R$50,00</span>
+                                R$25,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Combo',
+                                                    preco: 25
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-lanche" src="../images/bolo.webp" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Bolo gelado</h5>
+
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-half"></div>
+                                </div>
+
+                                R$8,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Bolo Gelado',
+                                                    preco: 8
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+
+                        <img class="card-img-top img-lanche" src="../images/yaki.jpeg" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Yakisoba Misto</h5>
+
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-half"></div>
+                                </div>
+
+                                <span class="text-muted text-decoration-line-through">R$43,00</span>
+                                R$25.00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Yakisoba Misto',
+                                                    preco: 25
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-lanche" src="../images/brigadeiro.webp" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Brigadeiro da Casa</h5>
+
+                                R$12,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Brigadeiro da Casa',
+                                                    preco: 12
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+
+                        <img class="card-img-top img-lanche" src="../images/supbatata.jpg" alt="Batata" />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Super Batata Frita</h5>
+
+                                R$18,00
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Super Batata Frita',
+                                                    preco: 18
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-lanche" src="../images/cocaks.jpg" alt="..." />
+
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h5 class="fw-bolder">Coca-cola KS</h5>
+
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+
+                                R$4,50
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="adicionarAoCarrinho({
+                                                    nome: 'Coca-cola KS',
+                                                    preco: 4.50
+                                                    })">Adicionar</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

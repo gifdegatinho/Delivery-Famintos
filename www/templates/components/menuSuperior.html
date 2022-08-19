@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" id="menuSuperior">
+    <div class="container px-4 px-lg-5">
+        <img  src="../images/logotipo.png" style="width: 157px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Cardápio</a></li>
+            </ul>
+            <div class="headerButtons">
+                <a 
+                    class="btn btn-outline-light" 
+                    style="border-color: #212529;" 
+                    type="submit" 
+                    href="carrinho.html">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrinho
+                    <!--<span class="badge bg-warning text-black-50 ms-1 rounded-pill">0</span>-->
+                </a>
+
+                <a
+                        class="btn btn-outline-light"
+                        style="border-color: #212529;"
+                        href="login.html"
+                        id="login_btn"
+                > Login </a>
+                
+                <a
+                        class="btn btn-outline-light"
+                        style="border-color: #212529;"
+                        href="cadastro.html"
+                        id="registrar_btn"
+                > Registrar-se </a>
+            </div>
+            
+            <div class="dropdown" style="padding-left: 10px;">
+              <button class="btn btn-outline-light dropdown-toggle" style="border-color: #212529;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+                Opções
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="perfil.html"><i class="fa-solid fa-user ddicon"></i>Perfil</a></li>
+                <li><a class="dropdown-item" href="carteira.html"><i class="fa-solid fa-wallet ddicon"></i>Carteira</a></li>
+                <li><a class="dropdown-item btn" onclick="logout()"><i class="fa-solid fa-right-from-bracket ddicon"></i>Sair</a></li>
+              </ul>
+            </div>
+        </div>
+     </div>
+</nav>

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../root/css-generated/bootstrap.css";
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 50%; 
+  margin-top: 7.2%;
+  margin-bottom: 5%;
+  margin-left: 25%;
+}
+
+.pagamento {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ddicon {
+padding-right: 10px;
+}
+
+.logo{
+  align-self: center;
+  width: 820px;
+  height: 312px;
+  padding: 2%;
+  border: none;
+
+}
+
+.logo2{
+  width: 820px;
+  height: 312px;
+}
+
+.cabecalho_restaurante{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imglogo{
+  width: 220px;
+  height: 220px;
+  margin-left: 5%;
+}
+
+.logos{
+  margin-left: 5%;
+}
+
+.carrinho{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnFinalizar{
+  padding-top: 16%;
+}
